@@ -1,0 +1,114 @@
+:root {
+    /*### Primary*/
+    --backgroundMain: hsl(47, 88%, 63%);
+    
+    /*### Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    
+    /*## Typography*/
+    
+    --Font-size-paragraph: 16px;
+    --Family: "Figtree", sans-serif;
+    --Weights: 500, 800;
+    
+    
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--backgroundMain);
+    }
+    #card {
+        margin: 185px auto;
+        width: 325px;
+        height: fit-content;
+        padding: 24px;
+        background-color: var(--White);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 24px;
+    
+        border: 1px solid var(--Black);
+        border-radius: 16px;
+        box-shadow: 7px 7px 0px 2px;
+        transition: ease 1s;
+        transform: scale(1);
+    }
+    #illustration-article {
+        border-radius: 16px;
+    }
+    
+    #title {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;  
+    }
+    #learning {
+        width: max-content;
+        padding: 5px 10px;
+        border-radius: 4px;
+    
+        background-color: var(--backgroundMain);
+    
+        text-align: center;
+        font-size: 14px;
+        font-weight: 800;
+        font-family: var(--Family);
+        color: var(--Black);
+    }
+    #date {
+        
+        text-align: start;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: var(--Family);
+    }
+    
+    #description {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;  
+    }
+    #titleDescription a{
+        text-align: start;
+        font-size: 22px;
+        font-weight: 800;
+        font-family: var(--Family);
+        color: var(--Black);
+        text-decoration: none;
+    }
+    #titleDescription a:hover {
+        color: var(--backgroundMain);
+    }
+    
+    #textDescription {
+        text-align: start;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        font-family: var(--Family);
+        color: var(--Grey);
+    }
+    #profile {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    #imageProfile {
+        width: 32px;
+        height: 32px;
+        background-image: url(assets/images/image-avatar.webp);
+        background-size: 100%;
+    }
+    #nameProfile {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 800;
+        font-family: var(--Family);
+        color: var(--Black);
+    }
